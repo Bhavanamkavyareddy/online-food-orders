@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickBite - Food Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="quick bite.png" alt="QuickBite Logo" class="logo" />
+    <h1>QuickBite 🍽️</h1>
+    <p>Deliciousness at your doorstep!</p>
+  </header>
+
+  <main>
+<section id="menu">
+      <!-- Food Items -->
+      <div class="item"><img src="images/biryani.jpeg" alt="Biryani"><h3>Biryani</h3><p>₹200</p><button onclick="addToCart('Biryani', 120)">Add to Cart</button></div>
+      <div class="item"><img src="images/chicken.jpeg" alt="Chicken Curry"><h3>Chicken Curry</h3><p>₹150</p><button onclick="addToCart('Chicken Curry', 150)">Add to Cart</button></div>
+      <div class="item"><img src="images/fry.jpeg" alt="Chicken Fry"><h3>Chicken Fry</h3><p>₹180</p><button onclick="addToCart('Chicken Fry', 180)">Add to Cart</button></div>
+      <div class="item"><img src="images/cake.jpeg" alt="Cake"><h3>Cake</h3><p>₹650</p><button onclick="addToCart('Cake', 650)">Add to Cart</button></div>
+      <div class="item"><img src="images/butterscotch.jpeg" alt="Butterscotch"><h3>Butterscotch</h3><p>₹680</p><button onclick="addToCart('Butterscotch', 680)">Add to Cart</button></div>
+      <div class="item"><img src="images/black currant.jpeg" alt="Blackcurrant"><h3>Blackcurrant</h3><p>₹730</p><button onclick="addToCart('Blackcurrant', 730)">Add to Cart</button></div>
+      <div class="item"><img src="images/kfc.jpeg" alt="KFC"><h3>KFC</h3><p>₹900</p><button onclick="addToCart('KFC', 900)">Add to Cart</button></div>
+      <div class="item"><img src="images/ice cream.jpeg" alt="Ice Cream"><h3>Ice Cream</h3><p>₹150</p><button onclick="addToCart('Ice Cream', 150)">Add to Cart</button></div>
+      <div class="item"><img src="images/pizza.jpeg" alt="Pizza"><h3>Pizza</h3><p>₹300</p><button onclick="addToCart('Pizza', 300)">Add to Cart</button></div>
+      <div class="item"><img src="images/frankie.jpeg" alt="frankie"><h3>Frankie</h3><p>₹100</p><button onclick="addToCart('Frankie', 100)">Add to Cart</button></div>
+      <div class="item"><img src="images/shawarma.jpeg" alt="Shawarma"><h3>Shawarma</h3><p>₹120</p><button onclick="addToCart('Shawarma', 120)">Add to Cart</button></div>
+      <div class="item"><img src="images/butter naan.jpeg" alt="butter naan"><h3>Butter Naan</h3><p>₹100</p><button onclick="addToCart('Butter Naan', 100)">Add to Cart</button></div>
+      <div class="item"><img src="images/panner.jpeg" alt="Paneer Butter Masala"><h3>Paneer Butter Masala</h3><p>₹250</p><button onclick="addToCart('Paneer Butter Masala', 250)">Add to Cart</button></div>
+</section>
+
+    <section id="cart">
+      <h2>🛒 Your Cart (<span id="itemCount">0</span> items)</h2>
+      <ul id="cartItems"></ul>
+      <p>Total: ₹<span id="total">0</span></p>
+
+      <div class="user-details">
+        <input type="text" id="customerName" placeholder="Enter your name" />
+        <input type="tel" id="phoneNumber" placeholder="Enter phone number" />
+        <input type="text" id="deliveryAddress" placeholder="Enter delivery address" />
+      </div>
+
+      <button onclick="placeOrder()">Place Order</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
